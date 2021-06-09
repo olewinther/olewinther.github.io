@@ -7,13 +7,13 @@ When you want to change something or update the website:
 * First time: clone the repo on your laptop
 
 ```bash
-git clone https://github.com/georgosgeorgos/update_winther
+git clone https://github.com/olewinther/olewinther.github.io
 ```
 
 * If you already have the repo on your laptop
 
 ```bash
-cd update_winther
+cd olewinther.github.io
 git pull
 ````
 
@@ -34,7 +34,7 @@ If your website is on another server, `ssh` in the server
 * First time you copy the content on the server:
 
 ```bash
-git clone https://github.com/georgosgeorgos/update_winther
+git clone https://github.com/olewinther/olewinther.github.io
 ```
 
 The `index.html` should be recognited automatically.
@@ -44,7 +44,7 @@ If the repo is already on the server
 * `cd` in the folder and `pull`
 
 ```bash
-cd update_winther
+cd olewinther.github.io
 git pull
 ```
 
