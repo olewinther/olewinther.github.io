@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -57,6 +57,33 @@
       max-height: 45px;
 
     }
+
+    /* ---- Responsive layout ---- */
+    html { -webkit-text-size-adjust: 100%; }
+    img { max-width: 100%; height: auto; }
+    .portrait { width: 250px; }
+    div.right { width: 250px; }
+    table.info { width: 85%; }
+    a { overflow-wrap: anywhere; }
+
+    @media (max-width: 700px) {
+      body { margin: 0; font-size: 16px; }
+      div.container { width: auto; margin: 0; padding: 1em; }
+      div.right { float: none; width: auto; margin: 0 0 1em 0; padding: 0; text-align: center; }
+      .portrait { width: 60%; max-width: 220px; border-radius: 6px; }
+      div.content { margin-left: 0; padding: 0; }
+      h1 { font-size: 1.8em; margin-top: 0.2em; }
+      ul { padding-left: 1.2em; }
+      .logos { height: auto; }
+      table.info { width: 100%; }
+      table.info td { padding: 0; }
+      /* Stack publication image above its text */
+      table.pubs, table.pubs tbody, table.pubs tr, table.pubs td { display: block; width: 100%; }
+      table.pubs td[height] { display: none; }
+      table.pubs tr { margin-bottom: 1.5em; }
+      table.pubs td:first-child img { width: 160px; margin-bottom: 0.5em; }
+      table.pubs td:first-child:not(:has(img)) { display: none; }
+    }
   </style>
 
 </head>
@@ -66,7 +93,7 @@
   <div class="container">
     <div class="right">
 
-      <img alt="" width="250px" src="./assets/ole_page.jpg">
+      <img alt="Ole Winther" class="portrait" src="./assets/ole_page.jpg">
       
     </div>
 
@@ -129,7 +156,7 @@
         <li><a href="#ai4science">AI for science</a> </li>
       </ul>
       
-      <table style="width:85%">
+      <table class="info">
         <tbody>
           <tr>
             <td>
@@ -223,7 +250,7 @@
         <p></p>
         <h2><a id="selected-publications">Older selected publicatons - never up to date ;-)</a></h2>
 
-        <table border="0" cellspacing="2" cellpadding="2">
+        <table class="pubs" border="0" cellspacing="2" cellpadding="2">
           <tbody>
             <tr>
               <td valign="top">
